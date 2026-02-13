@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>진짜 큰 사람은 낮아질 줄 아는 사람! - 청소년 QT</title>
+    
+    <!-- 폰트 시스템 적용 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/subsets/Paperlogy-dynamic-subset.css" type="text/css"/>
+    
+    <style>
+        /* [디자인 테마: Fresh Lime & Navy] */
+        :root {
+            --bg-paper: #f1f8e9;
+            --text-primary: #37474f;
+            --text-secondary: #1b5e20;
+            --accent-color: #64dd17;
+            --point-color: #2e7d32;
+            --border-color: #c5e1a5;
+            --bg-box: #ffffff;
+            --font-main: "Paperlogy", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        /* 초기화 및 인쇄 설정 */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background-color: #555;
+            color: var(--text-primary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px; /* 웹 뷰 패딩 축소 */
+        }
+
+        /* A4 컨테이너 - 높이와 여백 최적화 */
+        .page {
+            width: 210mm;
+            height: 297mm;
+            background-color: var(--bg-paper);
+            padding: 12mm 15mm; /* 여백을 조금 줄여 공간 확보 */
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden; /* 넘침 방지 */
+        }
+
+        /* 헤더 Compact 모드 */
+        header {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid var(--point-color);
+            padding-bottom: 10px;
+            margin-bottom: 15px; /* 간격 축소 */
+            gap: 15px;
+        }
+
+        .header-logo img {
+            height: 55px; /* 로고 크기 축소 */
+            width: auto;
+            display: block;
+        }
+
+        .header-text {
+            flex: 1;
+        }
+
+        h1.qt-title {
+            font-size: 20pt; /* 제목 크기 조정 */
+            font-weight: 800;
+            color: var(--text-secondary);
+            line-height: 1.1;
+            margin-bottom: 4px;
+            letter-spacing: -1px;
+            word-break: keep-all;
+        }
+
+        p.qt-date {
+            font-size: 10pt;
+            color: #ffffff;
+            font-weight: 600;
+            background-color: var(--point-color);
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 15px;
+        }
+
+        /* 메인 콘텐츠 그리드 - 간격 축소 */
+        .content-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto 1fr;
+            gap: 15px; /* 그리드 간격 축소 */
+            flex-grow: 1;
+        }
+
+        /* 공통 스타일 */
+        h2 {
+            font-size: 12.5pt; /* 섹션 제목 축소 */
+            font-weight: 700;
+            color: var(--point-color);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+        
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: var(--accent-color);
+            border-radius: 2px;
+            margin-right: 8px;
+            transform: rotate(45deg);
+        }
+
+        p, li {
+            font-size: 10.5pt; /* 본문 폰트 미세 조정 */
+            line-height: 1.5; /* 줄간격 타이트하게 */
+            word-break: keep-all;
+            text-align: justify;
+        }
+
+        /* 상단 섹션 */
+        .top-section {
+            grid-column: 1 / -1;
+            display: grid;
+            grid-template-columns: 3fr 7fr; /* 이미지 비율 축소 */
+            gap: 15px;
+            align-items: start;
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 15px;
+        }
+
+        .qt-image {
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 2px solid #fff;
+        }
+        
+        .qt-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .scripture-box {
+            background-color: var(--bg-box);
+            padding: 15px; /* 패딩 축소 */
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+        }
+
+        .scripture-text {
+            font-style: italic;
+            color: #455a64;
+            font-size: 10.5pt;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        
+        .scripture-ref {
+            display: block;
+            text-align: right;
+            font-weight: 700;
+            color: var(--point-color);
+            font-style: normal;
+            font-size: 9.5pt;
+        }
+
+        /* 중단: 해석 */
+        .reflection-section {
+            grid-column: 1 / -1;
+        }
+
+        .reflection-text {
+            column-count: 2;
+            column-gap: 30px;
+            column-rule: 1px solid var(--border-color);
+        }
+        
+        .reflection-text p {
+            margin-bottom: 8px; /* 단락 간격 축소 */
+        }
+
+        .qt-quote {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #ffffff;
+            border: 2px solid var(--accent-color);
+            text-align: center;
+            font-weight: 700;
+            color: var(--text-secondary);
+            border-radius: 8px;
+            break-inside: avoid;
+            box-shadow: 2px 2px 0px rgba(100, 221, 23, 0.3);
+            font-size: 10.5pt;
+        }
+
+        /* 하단: 질문 & 기도 */
+        .bottom-left {
+            background-color: var(--bg-box);
+            padding: 15px; /* 패딩 축소 */
+            border-radius: 12px;
+            border: 2px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bottom-right {
+            background-color: #e8f5e9;
+            padding: 15px; /* 패딩 축소 */
+            border-radius: 12px;
+            color: var(--text-primary);
+            display: flex;
+            flex-direction: column;
+        }
+
+        ol {
+            padding-left: 18px;
+            margin: 0;
+        }
+        
+        ol li {
+            margin-bottom: 4px; /* 리스트 간격 축소 */
+        }
+
+        .prayer-text {
+            font-style: normal;
+        }
+
+        .prayer-end {
+            text-align: right;
+            font-weight: 800;
+            margin-top: 8px;
+            color: var(--point-color);
+        }
+
+        /* 푸터 */
+        footer {
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid var(--border-color);
+            font-size: 8.5pt; /* 푸터 폰트 축소 */
+            color: #78909c;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        /* 인쇄 전용 */
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+                margin: 0;
+                display: block;
+            }
+            .page {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                box-shadow: none;
+                border: none;
+                border-radius: 0;
+                page-break-after: always;
+                padding: 10mm 15mm; /* 인쇄 시 여백 유지 */
+            }
+            header {
+                border-bottom: 2px solid var(--point-color);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page">
+        <!-- 헤더 -->
+        <header>
+            <div class="header-logo">
+                <a href='https://ifh.cc/v-70mfsb' target='_blank'>
+                    <img src='https://i.ifh.cc/70mfsb.jpg' border='0' alt="Logo">
+                </a>
+            </div>
+            <div class="header-text">
+                <h1 class="qt-title">진짜 큰 사람은 낮아질 줄 아는 사람!</h1>
+                <p class="qt-date">2월 9일 월요일 | 마태복음 18:1-5</p>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <!-- 1. 이미지 및 본문 말씀 -->
+            <section class="top-section">
+                <div class="qt-image">
+                    <a href="https://ifh.cc/v-9yxq2s" target="_blank">
+                        <img src="https://i.ifh.cc/9yxq2s.jpg" border="0" alt="Meditation Image">
+                    </a>
+                </div>
+                <div class="scripture-box">
+                    <h2>오늘의 말씀</h2>
+                    <blockquote class="scripture-text">
+                        "그때 제자들이 예수님께 와서 물었습니다. '하늘나라에서는 누가 가장 큽니까?' 예수님께서 어린아이 하나를 불러 그들 가운데에 세우시고 말씀하셨습니다. '...누구든지 이 어린아이처럼 자기를 낮추는 사람이 하늘나라에서 가장 큰 사람이다. 또 누구든지 내 이름으로 이런 어린아이 하나를 받아들이면, 나를 받아들이는 것이다.'"
+                    </blockquote>
+                    <span class="scripture-ref">(마태복음 18:1-5, 쉬운성경)</span>
+                </div>
+            </section>
+
+            <!-- 2. 본문 해석 -->
+            <section class="reflection-section">
+                <h2>말씀 돋보기</h2>
+                <div class="reflection-text">
+                    <p>여러분, 학교에서 "누가 더 잘하냐", "누가 더 인기 많냐" 이런 비교, 한 번쯤은 해본 적 있지 않아요? 예수님의 제자들도 그랬거든요. "하늘나라에서 누가 가장 커요?" 하고 물었어요. 그런데 예수님의 대답이 완전 반전이었어요. <strong>어린아이를 한 명 불러서 가운데 세우신 거예요.</strong> "이렇게 되어야 해!" 하고요. 왜 어린아이였을까요? 어린아이는 자기 힘으로 뭔가를 증명하려 하지 않잖아요. 그냥 부모님을 의지하고, 받기만 해요.</p>
+                    
+                    <p>우리는 보통 "더 잘해야 인정받는다"고 생각해요. 성적, 외모, 인기… 마치 레벨업해야 가치가 올라가는 게임 캐릭터처럼요. 그런데 <strong>하나님 나라의 시스템은 정반대랍니다.</strong> 자기를 낮추는 사람이 가장 큰 사람이래요. 이건 "자존감을 버려라"는 뜻이 아니에요. 하나님 앞에서 "저는 아무것도 아니에요. 하나님이 전부예요"라고 솔직하게 인정하는 거예요. 예수님도 하나님이시면서 가장 낮은 자리로 내려오셨잖아요.</p>
+                    
+                    <p>오늘 하루, 친구보다 더 잘 보이고 싶은 마음이 올라올 때, 잠깐 멈추고 생각해 볼까요? "나는 지금 누구 앞에 서 있지?" 하나님 앞에선 비교할 필요가 없어요. 이미 사랑받고 있으니까요. 그 안에서 친구를 배려하고 양보하는 모습, 그게 바로 하늘나라 스타일이랍니다.</p>
+
+                    <div class="qt-quote">
+                        "하나님 앞에선 비교 게임 끝!<br>낮아질수록 하나님의 사랑에 더 가까워진다."
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. 질문 및 기도 -->
+            <section class="bottom-left">
+                <h2>Think & Talk</h2>
+                <ol>
+                    <li>나는 학교나 친구들 사이에서 '인정받고 싶은 마음' 때문에 힘들었던 적이 있나요?</li>
+                    <li>다른 사람과 나를 비교하는 습관이 있다면, 주로 어떤 상황에서 그렇게 되나요?</li>
+                    <li>오늘 친구 한 명에게 양보하거나 먼저 배려하는 행동을 해볼 수 있을까요?</li>
+                </ol>
+            </section>
+
+            <section class="bottom-right">
+                <h2>나의 기도</h2>
+                <p class="prayer-text">하나님, 솔직히 저도 인정받고 싶고 잘 보이고 싶은 마음이 커요. 비교하는 마음이 자꾸 올라와서 힘들 때도 있어요. 그런데 예수님이 어린아이를 가리키신 걸 보면서, 저도 그냥 하나님 손을 잡는 아이가 되고 싶어요. 제가 잘해서가 아니라, 하나님이 저를 사랑하시니까 괜찮다는 걸 믿게 해주세요. 오늘 하루 친구들 앞에서 욕심 부리지 않고, 먼저 배려하는 사람이 되게 해주세요.</p>
+                <p class="prayer-end">예수님의 이름으로 기도합니다. 아멘.</p>
+            </section>
+        </div>
+
+        <!-- 푸터 -->
+        <footer>
+            #청소년QT #낮아짐의힘 #비교게임끝 #어린아이처럼 #하나님앞에서는모두소중 #겸손이최고레벨
+        </footer>
+    </div>
+</body>
+</html>

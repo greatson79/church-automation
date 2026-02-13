@@ -1,0 +1,109 @@
+<!--
+  청소년 QT — 카카오톡 A4 HTML | Week 7 화요일 | 마 26:36-39
+  디자인 테마: Fresh Lime & Navy (성장과 실천)
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 뜻 말고, 아버지의 뜻대로! - 청소년 QT</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/subsets/Paperlogy-dynamic-subset.css" type="text/css"/>
+    <style>
+        :root {
+            --bg-paper: #f1f8e9;
+            --text-primary: #37474f;
+            --text-secondary: #1b5e20;
+            --accent-color: #64dd17;
+            --point-color: #2e7d32;
+            --border-color: #c5e1a5;
+            --bg-box: #ffffff;
+            --font-main: "Paperlogy", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+        body { font-family: var(--font-main); background-color: #555; color: var(--text-primary); display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 40px; }
+        .page { width: 210mm; height: 297mm; background-color: var(--bg-paper); padding: 15mm 18mm; position: relative; box-shadow: 0 10px 30px rgba(0,0,0,0.3); display: flex; flex-direction: column; justify-content: space-between; border-radius: 5px; }
+        header { display: flex; align-items: center; border-bottom: 3px solid var(--point-color); padding-bottom: 15px; margin-bottom: 20px; gap: 20px; }
+        .header-logo img { height: 65px; width: auto; display: block; }
+        .header-text { flex: 1; }
+        h1.qt-title { font-size: 24pt; font-weight: 800; color: var(--text-secondary); line-height: 1.2; margin-bottom: 5px; letter-spacing: -1px; word-break: keep-all; }
+        p.qt-date { font-size: 11pt; color: #ffffff; font-weight: 600; background-color: var(--point-color); display: inline-block; padding: 4px 12px; border-radius: 20px; }
+        .content-wrapper { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto 1fr; gap: 25px; flex-grow: 1; }
+        h2 { font-size: 14pt; font-weight: 700; color: var(--point-color); margin-bottom: 12px; display: flex; align-items: center; }
+        h2::before { content: ''; display: inline-block; width: 10px; height: 10px; background-color: var(--accent-color); border-radius: 2px; margin-right: 10px; transform: rotate(45deg); }
+        p, li { font-size: 11pt; line-height: 1.6; word-break: keep-all; text-align: justify; }
+        .top-section { grid-column: 1 / -1; display: grid; grid-template-columns: 3.5fr 6.5fr; gap: 25px; align-items: start; border-bottom: 2px dashed var(--border-color); padding-bottom: 20px; }
+        .qt-image { width: 100%; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(46, 125, 50, 0.2); border: 3px solid #fff; }
+        .qt-image img { width: 100%; height: auto; display: block; }
+        .scripture-box { background-color: var(--bg-box); padding: 20px; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: 0 2px 8px rgba(0,0,0,0.03); }
+        .scripture-text { font-style: italic; color: #455a64; font-size: 11pt; margin-bottom: 8px; font-weight: 500; }
+        .scripture-ref { display: block; text-align: right; font-weight: 700; color: var(--point-color); font-style: normal; }
+        .reflection-section { grid-column: 1 / -1; }
+        .reflection-text { column-count: 2; column-gap: 40px; column-rule: 1px solid var(--border-color); }
+        .qt-quote { margin-top: 15px; padding: 15px; background-color: #ffffff; border: 2px solid var(--accent-color); text-align: center; font-weight: 700; color: var(--text-secondary); border-radius: 12px; break-inside: avoid; box-shadow: 3px 3px 0px rgba(100, 221, 23, 0.3); }
+        .bottom-left { background-color: var(--bg-box); padding: 20px; border-radius: 16px; border: 2px solid var(--border-color); }
+        .bottom-right { background-color: #e8f5e9; padding: 20px; border-radius: 16px; color: var(--text-primary); }
+        ol { padding-left: 20px; }
+        ol li { margin-bottom: 8px; font-weight: 500; }
+        .prayer-text { font-style: normal; }
+        .prayer-end { text-align: right; font-weight: 800; margin-top: 15px; color: var(--point-color); }
+        footer { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--border-color); font-size: 9pt; color: #78909c; text-align: center; font-weight: 600; }
+        @media print { body { background: none; padding: 0; margin: 0; display: block; } .page { width: 100%; height: 100%; margin: 0; box-shadow: none; border: none; border-radius: 0; page-break-after: always; padding: 10mm 15mm; } header { border-bottom: 2px solid var(--point-color); } }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <div class="header-logo">
+                <a href='https://ifh.cc/v-70mfsb' target='_blank'><img src='https://i.ifh.cc/70mfsb.jpg' border='0' alt="Logo"></a>
+            </div>
+            <div class="header-text">
+                <h1 class="qt-title">내 뜻 말고, 아버지의 뜻대로!</h1>
+                <p class="qt-date">2월 17일 화요일 | 마태복음 26:36-39</p>
+            </div>
+        </header>
+        <div class="content-wrapper">
+            <section class="top-section">
+                <div class="qt-image">
+                    <a href="./tue.png" target="_blank"><img src="./tue.png" border="0" alt="Meditation Image"></a>
+                </div>
+                <div class="scripture-box">
+                    <h2>오늘의 말씀</h2>
+                    <blockquote class="scripture-text">
+                        "예수께서 제자들과 함께 겟세마네라는 곳에 가셔서 ... 조금 더 나아가 얼굴을 땅에 대고 엎드려 기도하셨습니다. '나의 아버지, 할 수만 있으면 이 잔을 저에게서 지나가게 해 주십시오. 그러나 제 뜻대로 하지 마시고, 아버지의 뜻대로 해 주십시오.'"
+                    </blockquote>
+                    <span class="scripture-ref">(마태복음 26:36-39, 쉬운성경)</span>
+                </div>
+            </section>
+            <section class="reflection-section">
+                <h2>말씀 돋보기</h2>
+                <div class="reflection-text">
+                    <p>여러분, 정말 하기 싫은데 해야만 하는 일이 있었던 적 있어요? 시험 공부, 발표, 아니면 사과해야 하는 순간 같은 것들. 예수님도 그런 순간이 있으셨어요. 십자가에 달리기 전날 밤, 겟세마네 동산에서 예수님은 <strong>"죽을 것 같다"고 느끼실 만큼 엄청난 고통 속에서 기도하셨어요.</strong> 예수님도 피하고 싶으셨거든요. 우리와 똑같은 마음이셨어요.</p>
+                    <p>그런데 여기서 정말 대단한 게 뭔지 알아요? 예수님은 솔직하게 "이거 안 하면 안 돼요?"라고 아버지 하나님께 말씀하셨는데, 바로 이어서 <strong>"그래도 제 뜻 말고 아버지 뜻대로요"</strong>라고 하신 거예요. 이게 바로 진짜 신뢰예요. 마치 번지점프 할 때 줄을 믿고 뛰어내리는 것처럼, 예수님은 아버지 하나님을 완전히 신뢰하셨어요. 그리고 그 순종 덕분에 우리 모두가 하나님의 사랑 안에 들어올 수 있게 됐답니다.</p>
+                    <p>우리도 내 뜻대로 안 될 때가 있잖아요. 그때 하나님을 원망하기보다, "하나님, 저는 이게 힘든데요, 그래도 하나님이 더 잘 아시니까요"라고 솔직하게 말해 보는 건 어떨까요? 하나님은 우리의 솔직한 마음을 기뻐하시는 분이에요.</p>
+
+                    <div class="qt-quote">
+                        "진짜 용기는 무섭지 않은 게 아니라, 무서워도 하나님을 믿고 한 걸음 내딛는 것!"
+                    </div>
+                </div>
+            </section>
+            <section class="bottom-left">
+                <h2>Think &amp; Talk</h2>
+                <ol>
+                    <li>최근에 정말 피하고 싶었던 일이 있었나요? 그때 나는 어떻게 했나요?</li>
+                    <li>나는 힘든 상황에서 하나님께 솔직하게 마음을 말한 적이 있나요, 아니면 혼자 끙끙 앓는 편인가요?</li>
+                    <li>오늘 하루, "하나님, 제 뜻 말고 하나님 뜻대로요"라고 기도해 볼 한 가지 상황은 뭐가 있을까요?</li>
+                </ol>
+            </section>
+            <section class="bottom-right">
+                <h2>나의 기도</h2>
+                <p class="prayer-text">하나님, 저도 솔직히 하기 싫은 거 많고 내 맘대로 하고 싶을 때가 많아요. 그런데 예수님도 힘드셨으면서 하나님을 믿고 순종하신 걸 보니까, 저도 용기가 나요. 제가 지금 힘든 것도 다 아시잖아요. 내 뜻보다 하나님 뜻이 더 좋다는 걸 믿을게요. 오늘 하루도 솔직하게 기도하며 하나님을 신뢰할게요.</p>
+                <p class="prayer-end">예수님의 이름으로 기도합니다. 아멘.</p>
+            </section>
+        </div>
+        <footer>
+            #청소년QT #겟세마네 #기도 #솔직한마음 #하나님신뢰 #내뜻말고하나님뜻
+        </footer>
+    </div>
+</body>
+</html>

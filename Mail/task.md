@@ -1,0 +1,15 @@
+
+- [x] 프로젝트 계획 수립
+    - [x] 요구사항 분석 및 기술 스택 선정
+    - [x] 구현 계획 문서 (implementation_plan.md) 작성
+- [x] 구현 (Implementation)
+    - [x] 프로젝트 환경 설정 (requirements.txt, .env)
+    - [x] 이메일 템플릿 및 서명 디자인 작성
+    - [x] Google Sheets 연동 및 헤더 스타일링 로직 구현
+    - [x] 이메일 발송 로직 (중복 발송 방지, 발신자명 설정) 구현
+    - [x] 메인 실행 스크립트 (main.py) 작성
+    - [x] 원클릭 실행 파일 (run_mailer.command) 생성
+- [ ] 검증 (Verification)
+    - [ ] 모의 데이터로 발송 테스트 (Dry Run)
+    - [ ] 재발송 방지 로직 확인
+    - [ ] 최종 사용자 가이드 (Walkthrough) 작성

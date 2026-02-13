@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(timeout 20 npm run dev:*)",
+      "Bash(curl:*)",
+      "Bash(git add:*)",
+      "Bash(vercel)",
+      "Bash(npx create-next-app \"test2\" --yes)",
+      "Bash(git init:*)",
+      "Bash(git push:*)",
+      "Bash(npm install:*)",
+      "Bash(node:*)",
+      "Bash(npm init:*)",
+      "Bash(git -C \"/Users/kylej.choi/Desktop/Ai works\" status)",
+      "Bash(git -C \"/Users/kylej.choi/Desktop/Ai works\" log --oneline -5)",
+      "Bash(git -C \"/Users/kylej.choi/Desktop/Ai works\" diff --stat)",
+      "Bash(git -C \"/Users/kylej.choi/Desktop/Ai works\" add \"Claude skills/weekly-devotion/output/week-6/\" \"Claude skills/capture-a4.js\" \"Claude skills/package.json\" \"Claude skills/insert-images/\" \"Claude skills/output/week6_image/\" \"Claude skills/output/week7_image/\")",
+      "Bash(git -C \"/Users/kylej.choi/Desktop/Ai works\" add practice test1 test2 test3 test4)",
+      "Bash(git -C \"/Users/kylej.choi/Desktop/Ai works\" diff --staged --stat)",
+      "Bash(git -C \"/Users/kylej.choi/Desktop/Ai works\" log --oneline -3)",
+      "Bash(git -C \"/Users/kylej.choi/Desktop/Ai works\" add \"Claude skills/weekly-devotion/SKILL.md\" \"Claude skills/weekly-devotion/README.md\" \"Claude skills/weekly-devotion/devotion-data.json\" \"Claude skills/weekly-devotion/templates/\" \"Claude skills/package-lock.json\")",
+      "Bash(git -C \"/Users/kylej.choi/Desktop/Ai works\" commit -m \"$\\(cat <<''EOF''\nfeat: week-6 묵상 이미지 교체 및 자동 캡쳐 시스템 구축\n\n- week-6 수/목/금 HTML 이미지 교체 완료 \\(15개 파일\\)\n- insert-images 스킬 추가 \\(이미지 삽입 + PNG 자동 캡쳐\\)\n- capture-a4.js 스크립트 추가 \\(puppeteer A4 HTML → PNG 변환\\)\n- weekly-devotion 스킬에 이미지 폴더 자동 생성 단계 추가\n- week6/week7 이미지 폴더 생성\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git -C \"/Users/kylej.choi/Desktop/Ai works\" add .gitignore)",
+      "Bash(git -C \"/Users/kylej.choi/Desktop/Ai works\" commit -m \"$\\(cat <<''EOF''\nchore: .gitignore에 DS_Store, node_modules 추가\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(ls:*)",
+      "Bash(grep:*)",
+      "Bash(npx puppeteer:*)",
+      "Bash(git rm:*)",
+      "Bash(git commit:*)",
+      "Bash(git ls-tree:*)",
+      "Bash(npm audit fix:*)"
+    ]
+  }
+}

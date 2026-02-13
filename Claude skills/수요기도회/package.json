@@ -1,0 +1,9 @@
+{
+  "name": "didim-prayer",
+  "version": "1.0.0",
+  "description": "디딤수요기도회 기도제목 A4 문서 자동 생성",
+  "private": true,
+  "dependencies": {
+    "puppeteer": "^23.0.0"
+  }
+}

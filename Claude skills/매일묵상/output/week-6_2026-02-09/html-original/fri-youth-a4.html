@@ -1,0 +1,110 @@
+<!--
+  청소년 QT — 카카오톡 A4 HTML
+  디자인 테마: Fresh Lime & Navy (성장과 실천)
+  2026년 제6주 금요일 | 갈 5:13-14
+-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>진짜 자유는 사랑으로 쓰는 거야! - 청소년 QT</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/subsets/Paperlogy-dynamic-subset.css" type="text/css"/>
+    <style>
+        :root {
+            --bg-paper: #f1f8e9;
+            --text-primary: #37474f;
+            --text-secondary: #1b5e20;
+            --accent-color: #64dd17;
+            --point-color: #2e7d32;
+            --border-color: #c5e1a5;
+            --bg-box: #ffffff;
+            --font-main: "Paperlogy", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+        body { font-family: var(--font-main); background-color: #555; color: var(--text-primary); display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 40px; }
+        .page { width: 210mm; height: 297mm; background-color: var(--bg-paper); padding: 15mm 18mm; position: relative; box-shadow: 0 10px 30px rgba(0,0,0,0.3); display: flex; flex-direction: column; justify-content: space-between; border-radius: 5px; }
+        header { display: flex; align-items: center; border-bottom: 3px solid var(--point-color); padding-bottom: 15px; margin-bottom: 20px; gap: 20px; }
+        .header-logo img { height: 65px; width: auto; display: block; }
+        .header-text { flex: 1; }
+        h1.qt-title { font-size: 24pt; font-weight: 800; color: var(--text-secondary); line-height: 1.2; margin-bottom: 5px; letter-spacing: -1px; word-break: keep-all; }
+        p.qt-date { font-size: 11pt; color: #ffffff; font-weight: 600; background-color: var(--point-color); display: inline-block; padding: 4px 12px; border-radius: 20px; }
+        .content-wrapper { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto 1fr; gap: 25px; flex-grow: 1; }
+        h2 { font-size: 14pt; font-weight: 700; color: var(--point-color); margin-bottom: 12px; display: flex; align-items: center; }
+        h2::before { content: ''; display: inline-block; width: 10px; height: 10px; background-color: var(--accent-color); border-radius: 2px; margin-right: 10px; transform: rotate(45deg); }
+        p, li { font-size: 11pt; line-height: 1.6; word-break: keep-all; text-align: justify; }
+        .top-section { grid-column: 1 / -1; display: grid; grid-template-columns: 3.5fr 6.5fr; gap: 25px; align-items: start; border-bottom: 2px dashed var(--border-color); padding-bottom: 20px; }
+        .qt-image { width: 100%; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(46, 125, 50, 0.2); border: 3px solid #fff; }
+        .qt-image img { width: 100%; height: auto; display: block; }
+        .scripture-box { background-color: var(--bg-box); padding: 20px; border-radius: 12px; border: 1px solid var(--border-color); box-shadow: 0 2px 8px rgba(0,0,0,0.03); }
+        .scripture-text { font-style: italic; color: #455a64; font-size: 11pt; margin-bottom: 8px; font-weight: 500; }
+        .scripture-ref { display: block; text-align: right; font-weight: 700; color: var(--point-color); font-style: normal; }
+        .reflection-section { grid-column: 1 / -1; }
+        .reflection-text { column-count: 2; column-gap: 40px; column-rule: 1px solid var(--border-color); }
+        .qt-quote { margin-top: 15px; padding: 15px; background-color: #ffffff; border: 2px solid var(--accent-color); text-align: center; font-weight: 700; color: var(--text-secondary); border-radius: 12px; break-inside: avoid; box-shadow: 3px 3px 0px rgba(100, 221, 23, 0.3); }
+        .bottom-left { background-color: var(--bg-box); padding: 20px; border-radius: 16px; border: 2px solid var(--border-color); }
+        .bottom-right { background-color: #e8f5e9; padding: 20px; border-radius: 16px; color: var(--text-primary); }
+        ol { padding-left: 20px; }
+        ol li { margin-bottom: 8px; font-weight: 500; }
+        .prayer-text { font-style: normal; }
+        .prayer-end { text-align: right; font-weight: 800; margin-top: 15px; color: var(--point-color); }
+        footer { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--border-color); font-size: 9pt; color: #78909c; text-align: center; font-weight: 600; }
+        @media print { body { background: none; padding: 0; margin: 0; display: block; } .page { width: 100%; height: 100%; margin: 0; box-shadow: none; border: none; border-radius: 0; page-break-after: always; padding: 10mm 15mm; } header { border-bottom: 2px solid var(--point-color); } }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <div class="header-logo">
+                <a href='https://ifh.cc/v-70mfsb' target='_blank'><img src='https://i.ifh.cc/70mfsb.jpg' border='0' alt="Logo"></a>
+            </div>
+            <div class="header-text">
+                <h1 class="qt-title">진짜 자유는 사랑으로 쓰는 거야!</h1>
+                <p class="qt-date">2월 13일 금요일 | 갈라디아서 5:13-14</p>
+            </div>
+        </header>
+        <div class="content-wrapper">
+            <section class="top-section">
+                <div class="qt-image">
+                    <a href='https://ifh.cc/v-MQjyBD' target='_blank'><img src='https://i.ifh.cc/MQjyBD.jpg' border='0' alt="Meditation Image"></a>
+                </div>
+                <div class="scripture-box">
+                    <h2>오늘의 말씀</h2>
+                    <blockquote class="scripture-text">
+                        "형제 여러분, 여러분은 자유를 누리도록 부르심을 받았습니다. 그러나 자유를 육체의 욕심을 채우는 기회로 삼지 마십시오. 오히려 사랑으로 서로 섬기십시오. 율법 전체가 '네 이웃을 네 자신처럼 사랑하라'는 한마디 말로 요약됩니다."
+                    </blockquote>
+                    <span class="scripture-ref">(갈라디아서 5:13-14, 쉬운성경)</span>
+                </div>
+            </section>
+            <section class="reflection-section">
+                <h2>말씀 돋보기</h2>
+                <div class="reflection-text">
+                    <p>여러분, "자유"하면 뭐가 떠올라요? 학원 안 가는 거? 게임 마음껏 하는 거? 하고 싶은 거 다 하는 거? 맞아요, 보통 자유라고 하면 "내가 원하는 대로!" 라고 생각하죠. 그런데 성경에서 말하는 자유는 좀 달라요. 바울은 "자유를 받았으니까 <strong>사랑으로 서로 섬기라</strong>"고 해요. 엥? 자유인데 섬기라고요?</p>
+                    <p>이게 좀 이상해 보이지만, 생각해 보면 정말 멋진 거예요. 예를 들어, 게임에서 엄청난 능력치를 가진 캐릭터가 있다고 해봐요. 그 능력을 자기만 위해 쓰면 그냥 혼자 잘하는 유저일 뿐이에요. 하지만 <strong>팀원을 도와주고 함께 이기면? 그게 진짜 레전드 플레이어</strong>인 거죠. 예수님이 딱 그러셨어요. 하나님이시면서 가장 자유로운 분이셨는데, 그 자유를 통째로 우리를 위해 쓰셨어요. 강요가 아니라 사랑 때문에요. 율법 전체가 '이웃을 내 몸처럼 사랑하라'는 한 문장에 담긴다니, 사랑이 얼마나 큰 건지 느껴지죠?</p>
+                    <p>이번 한 주 동안 겸손, 양보, 섬김, 감사에 대해 묵상했어요. 오늘은 그 모든 것의 열쇠인 '사랑'이에요. 주말 동안 가족이나 친구에게 "나는 자유롭게 널 사랑하기로 했어!"라는 마음으로 작은 것 하나 해볼까요? 설거지, 안부 문자, 웃어주기 — 뭐든 좋아요. 그게 진짜 자유의 맛이랍니다.</p>
+
+                    <div class="qt-quote">
+                        "진짜 자유는 '내 맘대로'가 아니라 '너를 위해'를 선택할 수 있는 힘!"
+                    </div>
+                </div>
+            </section>
+            <section class="bottom-left">
+                <h2>Think &amp; Talk</h2>
+                <ol>
+                    <li>나에게 '자유'란 어떤 의미였나요? 성경에서 말하는 자유와 어떤 차이가 있나요?</li>
+                    <li>내가 가진 시간, 능력, 재능 중에서 친구나 가족을 위해 쓸 수 있는 것이 있나요?</li>
+                    <li>이번 주말, 사랑으로 섬기는 한 가지 행동을 구체적으로 정해 볼까요?</li>
+                </ol>
+            </section>
+            <section class="bottom-right">
+                <h2>나의 기도</h2>
+                <p class="prayer-text">하나님, 자유가 "내 맘대로"인 줄 알았는데, 진짜 자유는 사랑으로 섬기는 거라니 좀 놀랐어요. 솔직히 저는 제 시간, 제 것을 나누는 게 쉽지 않거든요. 그런데 예수님이 모든 것을 내려놓고 저를 사랑해 주셨다는 걸 생각하면, 저도 조금은 할 수 있을 것 같아요. 이번 주말에 가족이나 친구에게 작은 사랑 하나 실천할 수 있게 용기를 주세요.</p>
+                <p class="prayer-end">예수님의 이름으로 기도합니다. 아멘.</p>
+            </section>
+        </div>
+        <footer>
+            #청소년QT #진짜자유 #사랑으로섬기기 #너를위한선택 #레전드사랑 #이웃사랑실천
+        </footer>
+    </div>
+</body>
+</html>
